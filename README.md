@@ -1,4 +1,3 @@
-
 # 🧪 Crewmind.ai – Technical Challenge
 
 Thank you for your interest in the **Lead Fullstack Developer** position at Nexa Consulting.
@@ -18,14 +17,16 @@ Build a minimal fullstack assistant that allows a user to ask a question, stores
 You are free to structure the code however you prefer, but the following features are expected:
 
 ### 1. Frontend – React
+
 - A simple page with a **text input** and a **"Send" button**
 - When clicked, the input should be sent to the backend via API
 - Display the **response** from the backend on the screen
 
 ### 2. Backend – FastAPI
+
 - Receive the question sent from the frontend
 - Store the question in a **MongoDB** collection (local or cloud-based)
-- Return a fixed simulated response:  
+- Return a fixed simulated response:
   `"Thanks for your question, I’ll think about it."`
 
 ---
@@ -39,6 +40,7 @@ You are free to structure the code however you prefer, but the following feature
 ---
 
 ## 🧠 Bonus (optional but appreciated)
+
 - Instead of a fixed response, dynamically generate it (e.g., via a public LLM API, dummy prompt logic, or local inference)
 - Add a timestamp to each stored question
 - Add a second endpoint `/history` to return the full conversation
@@ -58,7 +60,7 @@ You are free to structure the code however you prefer, but the following feature
 
 ## 📅 Deadline
 
-Please submit your GitHub link in maximum 3 days time period.  
+Please submit your GitHub link in maximum 3 days time period.
 We’ll follow up shortly after reviewing your work.
 
 ---
@@ -66,6 +68,7 @@ We’ll follow up shortly after reviewing your work.
 ## 🧭 Evaluation Criteria
 
 We are not looking for perfection, but rather:
+
 - Code clarity and structure
 - Ability to use the right tools in the stack
 - Autonomy and problem-solving approach
@@ -73,4 +76,16 @@ We are not looking for perfection, but rather:
 
 Thank you again – we look forward to discovering your work!
 
+---
 
+## Submission
+
+# How to run the frontend
+
+cd into the frontend folder and run `npm start`. This will launch the frontend application on `http://localhost:3000`
+
+# How to run the backend
+
+1. Run `docker compose build` in the project folder. This will build the backend application into a docker container.
+2. Run `docker compose run` in the project folder. This will pull a container image for mongo db and start it, then run the container built in step 1.
+   The backend will now be ready to receive requests from the frontend.
