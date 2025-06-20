@@ -1,0 +1,14 @@
+.navigation {
+  padding: 10px;
+}
+
+.navigation a {
+  margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation a:hover {
+  font-weight: 700;
+  color: purple;
+}
